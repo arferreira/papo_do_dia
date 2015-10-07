@@ -1,5 +1,16 @@
 source 'https://rubygems.org'
 
+gem 'activeadmin', '~> 1.0.0.pre2'
+
+gem 'devise'
+
+gem 'carrierwave'
+
+gem "mini_magick"
+
+gem 'rails_admin', '~> 0.7.0'
+
+gem 'active_admin_editor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'

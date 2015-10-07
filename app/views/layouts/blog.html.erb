@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html lang="en" class="lte-ie9">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="pt">
+<!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Papo do Dia - com Neuly Ferreira </title>
+	<meta name="description" content="One-page responsive VC HTML template">
+	<meta name="keywords" content="template, clean, responsive, one-page, creative, vc">
+	<meta name="author" content="Alex Ilin">
+
+	<!-- Place favicon.ico in the root directory-->
+
+	<!-- Animate.css-->
+	<link rel="stylesheet" href="/styles/animate.min.css">
+
+	<!-- Normalize CSS-->
+	<link rel="stylesheet" href="/styles/normalize.css">
+
+	<!-- Magnific Popup-->
+	<link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.css">
+
+	<!-- Owl carousel-->
+	<link rel="stylesheet" href="/plugins/owl-carousel/owl.carousel.css">
+
+	<!-- Font Awesome-->
+	<link rel="stylesheet" href="/styles/font-awesome.min.css">
+
+	<!-- Google Fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,700italic,700%7CNothing+You+Could+Do" rel="stylesheet">
+
+	<link rel="stylesheet" href="/styles/main.css">
+
+</head>
+
+<body>
+
+	<!-- BEGIN NAV-->
+	<div class="main-nav">
+		<nav>
+			<ul>
+				<li><%= link_to 'Inicio',root_path %></li>
+				
+				<li><%= link_to 'Blog', :controller => 'blog', :action => 'posts' %></li>
+			</ul>
+		</nav>
+		<div class="btn-icon btn-nav">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+	<!-- END NAV-->
+
+	<div class="wrapper h-card">
+
+		<!-- BEGIN HEADER-->
+		<section id="intro" class="section section-bg-img section-bg-overlay section-bottom-rise">
+			<div class="bg"></div>
+			<div class="section-inner">
+
+				<div class="container">
+
+					<div class="intro">
+						<header class="heading">
+							<h1 class="wow zoomIn"><span class="name">Eu sou <span class="fn">Neuly Ferreira</span></span><span class="animated-letters category"><b class="is-visible">Gastronomia</b><b>Moda</b><b>Kids</b><b>Solidariedade</b><b>Cultural</b></span></h1>
+							<div class="separator wow zoomIn"></div>
+						</header>
+
+						<div data-wow-delay="0.1s" class="wow fadeInUp"><a href="#about" class="btn btn-bordered btn-go">Conheça</a></div>
+					</div>
+
+				</div>
+
+			</div>
+			<canvas id="particles"></canvas>
+		</section>
+		<!-- END HEADER-->
+
+
+
+		<%= yield %>
+
+	
+
+
+
+		<!-- BEGIN FOOTER-->
+		<section id="contacts" class="section  section-bg-overlay section-top-rise" style="background:black">
+			<div class="bg"></div>
+			<div class="section-inner">
+
+				<div class="container">
+
+					<header class="heading">
+						<h2>Contato</h2>
+						<div class="separator"></div>
+					</header>
+
+					<div class="contacts">
+						<div class="row">
+							<div class="col span_4">
+								<div class="contacts-item">
+									<div class="icon-b"><i class="fa fa-map-marker"></i></div>
+									<address class="adr"><span class="country-name">Coxim</span>, <span class="locality">Mato Grosso do Sul</span></address>
+								</div>
+							</div>
+							<div class="col span_4">
+								<div class="contacts-item">
+									<div class="icon-b"><i class="fa fa-phone"></i></div><span class="tel">(67) 9907-2956</span>
+								</div>
+							</div>
+							<div class="col span_4">
+								<div class="contacts-item">
+									<div class="icon-b"><i class="fa fa-send"></i></div><a href="mailto:mail@yoursite.com" class="email">neulyf.silva@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+				</div>
+
+			</div>
+		</section>
+		<!-- END FOOTER-->
+
+	</div>
+
+	<!-- jQuery-->
+	<script src="/scripts/jquery.min.js"></script>
+
+	<!-- Instafeed-->
+	<script src="/plugins/instafeed/instafeed.min.js"></script>
+
+	<!-- Google Maps API-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+	<!-- Magnific Popup-->
+	<script src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<!-- One Page Nav-->
+	<script src="/plugins/one-page-nav/jquery.nav.js"></script>
+
+	<!-- Owl Carousel-->
+	<script src="/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+	<!-- Shuffle-->
+	<script src="/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
+
+	<!-- Twitter Fetcher-->
+	<script src="/plugins/twitter-fetcher/twitterFetcher_min.js"></script>
+
+	<!-- Validate-->
+	<script src="/plugins/jquery-validate/jquery.validate.min.js"></script>
+
+	<!-- WOW-->
+	<script src="/plugins/wowjs/wow.min.js"></script>
+
+	<!-- Main Scripts-->
+	<script src="/scripts/main.js"></script>
+
+	<!-- Customizer-->
+	<script src="/scripts/customizer.js"></script>
+
+</body>
+
+</html>

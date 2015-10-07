@@ -1,0 +1,35 @@
+<section class="section">
+			<div class="section-inner">
+
+				<div class="container">
+
+					<header class="heading">
+						<h2>Blog</h2>
+					</header>
+
+					<div class="posts">
+						<% @posts.each do |post| %>
+						<article class="post">
+							<div class="post-thumbnail"><img src="<%= post.cover %>" width="250" height="250" alt=""></div>
+							<h3><%= link_to post.title, post %></h3>
+							<div class="post-meta">
+								<div class="date"><%= post.created_at.strftime('%d/%m/%Y') %></div>
+							</div>
+							<div class="post-meta">
+								<div class="date"><%= post.category.name %></div>
+							</div>
+							<p><%= post.description %>...</p>
+						</article>
+						<% end %>
+					</div>
+
+					<ul class="pagination">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>

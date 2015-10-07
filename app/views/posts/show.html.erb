@@ -1,0 +1,44 @@
+<section class="section">
+      <div class="section-inner">
+
+        <div class="container">
+
+          <header class="heading">
+            <h2><%= @post.title %></h2>
+          </header>
+
+          <article class="post">
+
+            <div class="post-meta">
+              <div class="date"><%= @post.created_at.strftime('%d/%m/%Y') %></div>
+            </div>
+
+            <div class="post-thumbnail"><img src="<%= @post.cover %>" width="940" height="752" alt=""></div>
+
+              <p>
+                
+                <%= @post.description %>
+              </p>
+<blockquote>
+<p>
+  
+  <%= @post.content %>
+</p>
+</blockquote>
+<div class="row">
+              <div class="col span_6">
+                <ul>
+                  <li><%= @post.category.name %></li>
+                  
+                </ul>
+              </div>
+
+
+<p>
+  
+  Por, <%= @post.author.name %>
+</p>
+
+  </div>
+      </div>
+    </section>
